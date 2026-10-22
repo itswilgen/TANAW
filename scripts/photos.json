@@ -1,0 +1,481 @@
+[
+  {
+    "name": "hero-roaster",
+    "id": "1511537190424-bbbab87ac5eb",
+    "slug": "person-pouring-coffee-beans-on-a-machine-6HR8vpjYUHo",
+    "photographer": "Yanapi Senaud",
+    "username": "yaanapi",
+    "widths": [
+      1280,
+      1920,
+      2560
+    ],
+    "quality": 34,
+    "params": "fit=max&blur=10"
+  },
+  {
+    "name": "hero-roaster-portrait",
+    "id": "1511537190424-bbbab87ac5eb",
+    "slug": "person-pouring-coffee-beans-on-a-machine-6HR8vpjYUHo",
+    "photographer": "Yanapi Senaud",
+    "username": "yaanapi",
+    "widths": [
+      640,
+      828,
+      1080
+    ],
+    "quality": 34,
+    "params": "ar=9:16&fit=crop&crop=focalpoint&fp-x=0.42&fp-y=0.42&blur=10"
+  },
+  {
+    "name": "story-sea-of-clouds",
+    "id": "1585761347573-0b9b767801cb",
+    "slug": "green-trees-on-mountain-under-blue-sky-during-daytime-4em_e8qQ4tA",
+    "photographer": "Ruby Jane Motilla",
+    "username": "rubymotilla",
+    "widths": [
+      640,
+      1024,
+      1600
+    ]
+  },
+  {
+    "name": "story-cherries",
+    "id": "1611330556082-0ba06d2780d0",
+    "slug": "red-and-green-cherry-fruit-fF9LOC5sMOQ",
+    "photographer": "Andres Hernandez",
+    "username": "andres11hernandez",
+    "widths": [
+      480,
+      800
+    ]
+  },
+  {
+    "name": "sig-sea-salt-latte",
+    "id": "1562447457-579fc34967fb",
+    "slug": "iced-coffee-with-milk-pouring-02O1bXB_fgk",
+    "photographer": "Empreinte",
+    "username": "ewafournier",
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  {
+    "name": "sig-sagada-pour-over",
+    "id": "1522737799611-b1119d527dc4",
+    "slug": "shallow-focus-photo-of-clear-glass-container-KoUphpq4a6k",
+    "photographer": "Ben Moreland",
+    "username": "relentlessjpg",
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  {
+    "name": "sig-muscovado-cold-brew",
+    "id": "1759259639356-6eee63241869",
+    "slug": "cold-brew-coffee-in-a-mason-jar-with-ice-WCmMU38zg1c",
+    "photographer": "Nadia Valko",
+    "username": "nadiavalko",
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  {
+    "name": "sig-tablea-mocha",
+    "id": "1542990253-0d0f5be5f0ed",
+    "slug": "chocolate-coffee-pouring-in-white-mug-MjZq7A2RJxQ",
+    "photographer": "Maddi Bazzocco",
+    "username": "maddibazzocco",
+    "widths": [
+      480,
+      800,
+      1200
+    ]
+  },
+  {
+    "name": "menu-espresso",
+    "id": "1558416165-5fb04b79b0e7",
+    "slug": "espresso-cups-on-espresso-maker-BBFRIGifYQ8",
+    "photographer": "Kevin Butz",
+    "username": "kevin_butz",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-cortado",
+    "id": "1610889556528-9a770e32642f",
+    "slug": "clear-glass-cup-on-saucer-xKS-1DP4g7A",
+    "photographer": "Adi Goldstein",
+    "username": "adigold1",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-flat-white",
+    "id": "1497636577773-f1231844b336",
+    "slug": "cappuccino-coffee-in-mug-tA90pRfL2gM",
+    "photographer": "Nathan Dumlao",
+    "username": "nate_dumlao",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-latte",
+    "id": "1593443320739-77f74939d0da",
+    "slug": "white-ceramic-cup-with-saucer-on-brown-wooden-table-3n3mPoGko8g",
+    "photographer": "tabitha turner",
+    "username": "tabithaturnervisuals",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-spanish-latte",
+    "id": "1596018589878-217d8603c4c6",
+    "slug": "person-pouring-brown-liquid-on-black-ceramic-mug-hqqC5uZn6PA",
+    "photographer": "Andreas Behr",
+    "username": "andreasbehr",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-iced-latte",
+    "id": "1517701550927-30cf4ba1dba5",
+    "slug": "clear-glass-filled-ice-coffee-vZOZJH_xkUk",
+    "photographer": "Nathan Dumlao",
+    "username": "nate_dumlao",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-matcha-latte",
+    "id": "1515823064-d6e0c04616a7",
+    "slug": "white-ceramic-teacup-filled-of-matcha-tea-Z-hvocTfR_s",
+    "photographer": "Jason Leung",
+    "username": "ninjason",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-iced-matcha",
+    "id": "1717603545758-88cc454db69b",
+    "slug": "iced-matcha-latte-on-wooden-table-N1rmKN_EOaA",
+    "photographer": "Olena Bohovyk",
+    "username": "olenkasergienko",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-ube-latte",
+    "id": "1745725247846-12a3e3109bbf",
+    "slug": "a-purple-iced-drink-next-to-a-plant-Sbs1vytqNnI",
+    "photographer": "Frank Huang",
+    "username": "frankhme",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-tablea",
+    "id": "1517578239113-b03992dcdd25",
+    "slug": "photo-of-mug-with-hot-choco-RtHw0PWCLhw",
+    "photographer": "Giancarlo Duarte",
+    "username": "giancarloduarte",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-salabat",
+    "id": "1610450622827-195cb7308af8",
+    "slug": "clear-glass-mug-with-yellow-liquid-on-brown-wooden-chopping-board",
+    "photographer": "Julia Topp",
+    "username": "jules_eatrunhike",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-ginger-iced-tea",
+    "id": "1631029098074-be99eb2b425c",
+    "slug": "clear-drinking-glass-with-yellow-liquid",
+    "photographer": "Farsai Chaikulngamdee",
+    "username": "clearsky",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-croissant",
+    "id": "1681218079567-35aef7c8e7e4",
+    "slug": "a-croissant-sitting-on-top-of-a-cork-coaster-a4xoMVKzbak",
+    "photographer": "Vicky Nguyen",
+    "username": "isszvicky25",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-pain-au-chocolat",
+    "id": "1681218424681-b4f8228ecea9",
+    "slug": "a-piece-of-bread-sitting-on-top-of-a-cork-coaster-XDS-YmjUUvY",
+    "photographer": "Vicky Nguyen",
+    "username": "isszvicky25",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-ensaymada",
+    "id": "1688084436286-8f0ca14e9390",
+    "slug": "a-baked-pastry-on-a-plate-on-a-wooden-table-onPKU1LvAhE",
+    "photographer": "Christian Dala",
+    "username": "kurisuchanxx",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-ube-pandesal",
+    "id": "1599191179068-a4bb11ecd500",
+    "slug": "brown-bread-on-black-metal-rack-C6q6Yf-ECmE",
+    "photographer": "Miguel Lorenzo",
+    "username": "miggymigs",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-banana-bread",
+    "id": "1632931057819-4eefffa8e007",
+    "slug": "a-loaf-of-banana-nut-bread-sitting-on-top-of-a-wooden-cutting-board-a0fBbS8RZAo",
+    "photographer": "Cody Chan",
+    "username": "cceee",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-v60",
+    "id": "1587955245893-389f2215c6eb",
+    "slug": "white-and-brown-liquid-in-stainless-steel-cup-WbdkFHDFbTg",
+    "photographer": "Kevin Canlas",
+    "username": "kvncnls",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-chemex",
+    "id": "1574359172160-c7ae4fadcacc",
+    "slug": "clear-glass-decanter-filled-with-black-liquid-Ve2SL0zMhWk",
+    "photographer": "Zarak Khan",
+    "username": "zarakvg",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-aeropress",
+    "id": "1559712083-b30fb20ad204",
+    "slug": "person-brewing-coffee-1Yje-NZrrME",
+    "photographer": "Ben Moreland",
+    "username": "relentlessjpg",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-french-press",
+    "id": "1519082274554-1ca37fb8abb7",
+    "slug": "time-lapse-photo-of-french-press-A1wzMskhU_c",
+    "photographer": "Rachel Brenner",
+    "username": "rachel_lee_brenner",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "menu-cold-brew",
+    "id": "1531835207745-506a1bc035d8",
+    "slug": "glass-of-iced-coffee-placed-on-brown-stone-_Wm6mhXO9rk",
+    "photographer": "Nathan Dumlao",
+    "username": "nate_dumlao",
+    "widths": [
+      240,
+      480,
+      800
+    ]
+  },
+  {
+    "name": "process-source",
+    "id": "1597816792530-f6d57bd2bf9e",
+    "slug": "red-round-fruits-on-green-leaves-during-daytime-ICAYc8e2pls",
+    "photographer": "Delightin Dee",
+    "username": "delightindee",
+    "widths": [
+      480,
+      800
+    ]
+  },
+  {
+    "name": "process-roast",
+    "id": "1607681034540-2c46cc71896d",
+    "slug": "coffee-roasting-in-playa-del-carmen-YC6RVdoTtIk",
+    "photographer": "Tim Mossholder",
+    "username": "timmossholder",
+    "widths": [
+      480,
+      800
+    ]
+  },
+  {
+    "name": "process-brew",
+    "id": "1609050471053-8636409f9f5b",
+    "slug": "espresso-pouring-from-portafilter-So7cyDtlmls",
+    "photographer": "Nathan Dumlao",
+    "username": "nate_dumlao",
+    "widths": [
+      480,
+      800
+    ]
+  },
+  {
+    "name": "process-serve",
+    "id": "1514066558159-fc8c737ef259",
+    "slug": "man-pouring-milk-in-coffee-2z3MOB3kfJU",
+    "photographer": "Nathan Dumlao",
+    "username": "nate_dumlao",
+    "widths": [
+      480,
+      800
+    ]
+  },
+  {
+    "name": "space-counter",
+    "id": "1567880905822-56f8e06fe630",
+    "slug": "modern-coffee-shop-interior-with-curved-counter-ZZxmc66SjfM",
+    "photographer": "Keghan Crossland",
+    "username": "keghancphoto",
+    "widths": [
+      640,
+      1024,
+      1600
+    ]
+  },
+  {
+    "name": "space-long-table",
+    "id": "1511081692775-05d0f180a065",
+    "slug": "cafe-interior-with-hanging-bulbs-and-table-VobvKmG-StA",
+    "photographer": "Clifford",
+    "username": "cyzx",
+    "widths": [
+      640,
+      1024,
+      1600
+    ]
+  },
+  {
+    "name": "space-bar",
+    "id": "1453614512568-c4024d13c247",
+    "slug": "black-kitchen-appliance-on-kitchen-island-with-pendant-lights-Kwdp-0pok-I",
+    "photographer": "Nafinia Putra",
+    "username": "nputra",
+    "widths": [
+      640,
+      1024,
+      1600
+    ]
+  },
+  {
+    "name": "space-tiles",
+    "id": "1538333581680-29dd4752ddf2",
+    "slug": "empty-chairs-and-tables-inside-room-with-lights-turned-on-PK1pzUGQSjc",
+    "photographer": "Alexander Faé",
+    "username": "alexfae",
+    "widths": [
+      640,
+      1024,
+      1600
+    ]
+  },
+  {
+    "name": "space-bench",
+    "id": "1565650839149-2c48a094196c",
+    "slug": "round-brown-wooden-tables-beside-black-leather-sofa-yr9l_xQPDL0",
+    "photographer": "99.films",
+    "username": "99films",
+    "widths": [
+      640,
+      1024,
+      1600
+    ]
+  },
+  {
+    "name": "space-plants",
+    "id": "1600353565737-2427a1ba3d3a",
+    "slug": "green-potted-plants-on-white-table-pIO8zFpgL_s",
+    "photographer": "Jonathan Borba",
+    "username": "jonathanborba",
+    "widths": [
+      640,
+      1024,
+      1600
+    ]
+  }
+]

@@ -1,0 +1,423 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/manrope';
+
+/*
+ * Fraunces, subset from @fontsource-variable/fraunces by scripts/subset-fonts.py:
+ * optical size stays variable, weight is pinned to 450 (the only weight used).
+ */
+@font-face {
+  font-family: 'Fraunces Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 450;
+  src: url('./assets/fonts/fraunces-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces Variable';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 450;
+  src: url('./assets/fonts/fraunces-italic.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* ₱ only — so prices don't pull in the whole latin-ext file. */
+@font-face {
+  font-family: 'Fraunces Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 450;
+  src: url('./assets/fonts/fraunces-peso.woff2') format('woff2-variations');
+  unicode-range: U+20B1;
+}
+/*
+ * Fallback for the moment before Fraunces arrives: Georgia scaled to Fraunces' widths at
+ * hero size, so the headline wraps the same way and doesn't jump when the web font swaps in.
+ */
+@font-face {
+  font-family: 'Fraunces Fallback';
+  font-style: normal;
+  src: local('Georgia');
+  size-adjust: 97%;
+}
+@font-face {
+  font-family: 'Fraunces Fallback';
+  font-style: italic;
+  src: local('Georgia Italic'), local('Georgia-Italic');
+  size-adjust: 90%;
+}
+
+/* Real pointer that can hover (desktop mouse / trackpad). */
+@custom-variant can-hover (@media (hover: hover) and (pointer: fine));
+
+@theme {
+  /* 60 — light base */
+  --color-oat: #f5efe6;
+  --color-foam: #fbf8f3;
+  /* 30 — depth */
+  --color-espresso: #1f1712;
+  --color-roast: #2a1f19;
+  --color-bean: #6b5b4e;
+  /* 10 — accent */
+  --color-clay: #b5562e;
+  --color-clay-ink: #a04a26; /* clay for text links on light grounds: 5.25:1 on oat */
+  --color-crema: #d9a55b;
+  --color-sage: #7a8b6f;
+  /* Hero illustration only. */
+  --color-skin: #c68b63;
+  --color-skin-shade: #a26a48;
+  /* hairlines */
+  --color-line: rgb(31 23 18 / 0.11);
+  --color-line-dark: rgb(245 239 230 / 0.14);
+
+  --font-display: 'Fraunces Variable', 'Fraunces Fallback', ui-serif, Georgia, serif;
+  --font-sans: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
+
+  /* Type scale: 14 / 16 / 18 / 22 / 32 / 48 / 72 */
+  --text-*: initial;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.6;
+  --text-xl: 1.375rem;
+  --text-xl--line-height: 1.35;
+  --text-2xl: 2rem;
+  --text-2xl--line-height: 1.15;
+  --text-3xl: clamp(2.25rem, 1.6rem + 2.6vw, 3rem);
+  --text-3xl--line-height: 1.05;
+  --text-display: clamp(3rem, 1.9rem + 4.6vw, 4.5rem);
+  --text-display--line-height: 0.98;
+
+  --tracking-display: -0.02em;
+  --tracking-eyebrow: 0.14em;
+
+  --radius-*: initial;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --shadow-*: initial;
+  --shadow-nav: 0 10px 30px -22px rgb(31 23 18 / 0.45);
+  --shadow-float:0 1px 2px rgb(31 23 18 / 0.08), 0 18px 40px -12px rgb(31 23 18 / 0.35);
+
+  --animate-marquee: marquee 48s linear infinite;
+  @keyframes marquee {
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    @apply bg-oat text-espresso font-sans text-base antialiased;
+    font-feature-settings: 'ss01' 0;
+    text-rendering: optimizeLegibility;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-display text-balance;
+    font-optical-sizing: auto;
+    font-weight: 450; /* the pinned Fraunces weight, see scripts/subset-fonts.py */
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    @apply bg-crema/40 text-espresso;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-3 outline-clay rounded-sm;
+  }
+  .dark-section :focus-visible {
+    @apply outline-crema;
+  }
+}
+
+@layer components {
+  /* Eyebrow label above section titles. */
+  .eyebrow {
+    @apply text-sm font-semibold uppercase tracking-eyebrow;
+  }
+
+  /* Menu-board leader: name ········ price. Dots fill whatever space is left. */
+  .leader {
+    @apply relative mx-3 min-w-6 flex-1 self-end;
+    height: 0.4em;
+    margin-bottom: 0.32em;
+    background-image: radial-gradient(circle, currentColor 0.09em, transparent 0.1em);
+    background-size: 0.5em 0.4em;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    opacity: 0.35;
+  }
+}
+
+/*
+ * Page-load sequence (nav → headline words → intro → CTAs → hero image).
+ * It runs in CSS rather than Motion so it starts with the prerendered HTML instead of
+ * waiting for JavaScript. Same easing and 60ms step as src/lib/motion.ts; set the
+ * position with style={loadStep(n)}. `backwards` fill leaves no transform behind.
+ */
+@keyframes load-rise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+/* Images don't fade themselves (a cover fades instead), so they paint immediately. */
+@keyframes load-uncover {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes load-fade {
+  from {
+    opacity: 0;
+  }
+}
+@utility load-in {
+  animation: load-rise 0.5s var(--ease-out-soft) backwards;
+  animation-delay: calc(var(--step, 0) * 60ms);
+  @media (prefers-reduced-motion: reduce) {
+    animation-name: load-fade;
+  }
+}
+/* Surface-coloured cover over a load-in image; fading it reads as the image fading in. */
+@utility load-cover {
+  animation: load-uncover 0.55s var(--ease-out-soft) forwards;
+  animation-delay: calc(var(--step, 0) * 60ms);
+  pointer-events: none;
+}
+
+/*
+ * Hero barista illustration (BaristaScene.tsx). One 8s pour cycle shared by the kettle,
+ * head, stream, drips and fill level, so they stay in sync. Pivots are set inline in
+ * SVG user units; transform-box makes them resolve against the viewBox.
+ */
+.barista :is(.barista-lamp, .barista-head, .barista-kettle, .barista-level, .barista-flow, .barista-drip, .barista-steam, .barista-clouds) {
+  transform-box: view-box;
+}
+.barista-kettle {
+  animation: barista-kettle 8s ease-in-out infinite;
+}
+.barista-head {
+  animation: barista-head 8s ease-in-out infinite;
+}
+.barista-stream {
+  animation: barista-stream 8s linear infinite;
+}
+.barista-flow {
+  animation: barista-flow 0.4s linear infinite;
+}
+.barista-level {
+  animation: barista-level 8s linear infinite;
+}
+.barista-drips {
+  animation: barista-drips 8s linear infinite;
+}
+.barista-drip {
+  animation: barista-drip 1s ease-in infinite;
+}
+.barista-steam {
+  animation: barista-steam 3.3s ease-out infinite;
+}
+.barista-lamp {
+  animation: barista-lamp 6s ease-in-out infinite alternate;
+}
+.barista-clouds {
+  animation: barista-clouds 11s ease-in-out infinite alternate;
+}
+.barista-clouds-alt {
+  animation-duration: 14s;
+  animation-direction: alternate-reverse;
+}
+.barista[data-paused] * {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  /* A still frame mid-pour: stream on, carafe half full, steam resting. */
+  .barista * {
+    animation: none !important;
+  }
+  .barista-drip {
+    opacity: 0;
+  }
+}
+@keyframes barista-kettle {
+  0%,
+  78%,
+  100% {
+    transform: rotate(14deg);
+  }
+  12%,
+  66% {
+    transform: rotate(0deg);
+  }
+  20%,
+  36%,
+  52% {
+    transform: rotate(1.5deg);
+  }
+  28%,
+  44%,
+  60% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes barista-head {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  12%,
+  64% {
+    transform: rotate(-5deg);
+  }
+  76% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes barista-stream {
+  0%,
+  11%,
+  67%,
+  100% {
+    opacity: 0;
+  }
+  15%,
+  63% {
+    opacity: 1;
+  }
+}
+@keyframes barista-flow {
+  to {
+    transform: translateY(14px);
+  }
+}
+@keyframes barista-level {
+  0%,
+  16% {
+    transform: scaleY(0.2);
+    opacity: 0.8;
+  }
+  72%,
+  88% {
+    transform: scaleY(0.9);
+    opacity: 0.8;
+  }
+  95% {
+    transform: scaleY(0.9);
+    opacity: 0;
+  }
+  96% {
+    transform: scaleY(0.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(0.2);
+    opacity: 0.8;
+  }
+}
+@keyframes barista-drips {
+  0%,
+  18%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  22%,
+  74% {
+    opacity: 1;
+  }
+}
+@keyframes barista-drip {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+@keyframes barista-steam {
+  0% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(-22px);
+    opacity: 0;
+  }
+}
+@keyframes barista-clouds {
+  from {
+    transform: translateX(-14px);
+  }
+  to {
+    transform: translateX(14px);
+  }
+}
+@keyframes barista-lamp {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
+
+/*
+ * Story photos: a slow float. Each photo sets its own distance, tilt and timing so the pair
+ * drifts out of phase. Paused off screen (`data-paused` on a parent), still under reduced motion.
+ */
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, var(--float-y, -8px), 0) rotate(var(--float-tilt, 0deg));
+  }
+}
+@utility float {
+  animation: float var(--float-duration, 8s) ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+}
+[data-paused] .float {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .float {
+    animation: none;
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums lining-nums;
+}
